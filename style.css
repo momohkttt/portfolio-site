@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* border: 2px solid red; */
+	border: 2px solid red;
 }
 
 @font-face {
@@ -12,9 +12,6 @@
 
 body {
 	font-family: "Inter", sans-serif;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, auto) 15vh;
 }
 
 .container {
@@ -38,7 +35,8 @@ body {
 	height: 8vh;
 }
 
-nav p {
+nav p,
+.footer-logo {
 	font-weight: bold;
 	font-size: 1.25rem;
 	margin: 0;
@@ -49,7 +47,8 @@ nav p {
 }
 
 nav p,
-span {
+span,
+.footer-logo {
 	background: linear-gradient(to right, #c026d3, #9333ea);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -67,18 +66,21 @@ nav li {
 	font-size: 1.1rem;
 }
 
+#nav-bar li a {
+	color: #4b5563;
+}
+
+#hero {
+	background-color: #fdf4ff;
+	padding: 100px 0;
+	text-align: center;
+}
+
 .flex-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	padding: 20px;
-}
-
-#hero {
-	background-color: #fdf4ff;
-	padding: 40px 0;
-	text-align: center;
 }
 
 .welcome {
@@ -93,13 +95,13 @@ nav li {
 	width: fit-content;
 }
 
+.hero-img-container {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 	text-align: center;
-}
-
-#nav-bar li a {
-	color: #4b5563;
 }
 
 h1 {
@@ -336,15 +338,70 @@ p {
 	width: 3.5rem;
 }
 
-@media (min-width: 640px) and (max-width: 768px) {
+.footer {
+	background-color: #fdf4ff;
+	padding: 1.5em 0;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+	.nav {
+		max-width: 640px;
+	}
+
 	.hero-links {
 		flex-direction: row;
 		justify-content: center;
 	}
+
 	#hero a {
 		width: 20%;
 	}
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
+	.container {
+		max-width: 1000px;
+	}
+
+	.hero-container {
+		display: flex;
+		align-items: center;
+		/* gap: 8em; */
+	}
+
+	h1 {
+		font-size: 4.5rem;
+		text-align: left;
+	}
+
+	.hero-links {
+		flex-direction: row;
+		justify-content: center;
+		gap: 2em;
+	}
+
+	#hero a {
+		width: 25%;
+		padding: 0.5em 1em;
+		border-radius: 10px;
+	}
+
+	.hero-container {
+		justify-content: space-between;
+	}
+	.hero-img-container {
+		display: block;
+	}
+
+	#hero-img {
+		padding: 20px;
+		width: 100%;
+	}
 }
