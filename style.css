@@ -279,8 +279,8 @@ p {
 }
 
 .contact-icon-container {
-	background: #fdf4ff;
-	padding: 20px;
+	background: #d179ea;
+	padding: 30px;
 	margin: 0 auto;
 	display: flex;
 	width: fit-content;
@@ -299,18 +299,28 @@ p {
 	justify-content: center;
 	align-items: center;
 	padding-top: 40px;
+	flex-wrap: wrap;
 }
 
 .contact-detail-container {
 	display: flex;
 	background: #999;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	padding: 20px;
 	border-radius: 50%;
 }
 
+.contact-detail-container:hover,
+.contact-detail-container:focus {
+	background: #9333ea;
+}
+
+.contact-detail-container:active {
+	transform: scale(0.97);
+}
 .contact-detail {
 	margin: 0;
-	height: 3rem;
+	height: 3.5rem;
+	width: 3.5rem;
 }
