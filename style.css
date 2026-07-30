@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* border: 2px solid red; */
+	border: 2px solid red;
 }
 
 @font-face {
@@ -157,7 +157,6 @@ p {
 	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 10px;
-	width: 75%;
 }
 
 h3 {
@@ -167,6 +166,10 @@ h3 {
 
 #skills {
 	background: #f9fafb;
+}
+
+.skills-description {
+	text-align: center;
 }
 
 .card {
@@ -261,4 +264,8 @@ h3 {
 	color: #9333ea;
 	background: #fdf4ff;
 	border: 1px solid #e5e7eb;
+}
+
+p {
+	max-width: 700px;
 }
