@@ -206,7 +206,8 @@ h3 {
 }
 
 .card:hover,
-.card:focus {
+.card:focus,
+.card:active {
 	box-shadow: 0 0 10px #999;
 }
 
