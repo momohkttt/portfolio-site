@@ -334,8 +334,12 @@ p {
 
 .footer-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+}
+
+.footer-logo {
+	display: none;
 }
 
 .copyright {
@@ -354,6 +358,14 @@ p {
 
 	#hero a {
 		width: 20%;
+	}
+
+	.footer-container {
+		justify-content: space-between;
+	}
+
+	.footer-logo {
+		display: block;
 	}
 }
 
@@ -422,5 +434,13 @@ p {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.footer-container {
+		justify-content: space-between;
+	}
+
+	.footer-logo {
+		display: block;
 	}
 }
