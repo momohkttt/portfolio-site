@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 @font-face {
@@ -58,7 +58,7 @@ span,
 
 nav ul {
 	display: flex;
-	gap: 40px;
+	gap: 2.5em;
 }
 
 nav li {
@@ -145,13 +145,13 @@ h1 {
 }
 
 h2 {
-	display: block;
 	font-size: 2.25rem;
 	text-align: center;
+	margin-bottom: 0.5em;
 }
 
 #about {
-	padding: 6.5em 0;
+	padding: 5em 0;
 }
 
 #about img {
@@ -170,7 +170,7 @@ p {
 
 h3 {
 	font-size: 2rem;
-	margin-bottom: 10px;
+	margin: 1.5em 0 0.4em;
 }
 
 #skills {
@@ -423,6 +423,7 @@ p {
 	.about-content {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 2em;
 	}
 
