@@ -427,13 +427,17 @@ p {
 		gap: 2em;
 	}
 
+	#about h2 {
+		margin: 0;
+	}
+
 	#about img {
 		width: 300px;
 		height: 300px;
 	}
 
-	#about h2 {
-		margin-bottom: 20px;
+	h3 {
+		margin-top: 1em;
 	}
 
 	.skills-content {
